@@ -7,15 +7,13 @@ The application provides **winter care services**, **grooming**, **pet accessori
 
 ## 📸 Screenshot  
 > *(Replace the image URL with your own screenshot)*  
-![WarmPaws Screenshot](https://i.ibb.co.com/B2BjxbZz/finans-2.jpg)
+![WarmPaws Screenshot](./src/assets/WarmPaws.png)
 
 ---
 
 ## 🌐 Live Demo
 
 🔗 **Live Website:** https://pet-care-26f18.web.app/  
-🔗 **Client Repository:** _Add your GitHub repo link here_  
-🔗 **Server Repository:** _Add link if applicable_
 
 ---
 
