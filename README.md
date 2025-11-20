@@ -13,7 +13,8 @@ The application provides **winter care services**, **grooming**, **pet accessori
 
 ## 🌐 Live Demo
 
-🔗 <a href="https://pet-care-26f18.web.app/" target="_blank">Live Website</a>
+🔗 [Live Website](https://pet-care-26f18.web.app/)
+
 
 ---
 
