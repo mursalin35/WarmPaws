@@ -7,7 +7,7 @@ The application provides **winter care services**, **grooming**, **pet accessori
 
 ## 📸 Screenshot  
 > *(Replace the image URL with your own screenshot)*  
-![WarmPaws Screenshot](./src/assets/WarmPaws.png)
+![WarmPaws Screenshot](https://i.ibb.co.com/mC3dFBNs/WarmPaws.png)
 
 ---
 
