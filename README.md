@@ -6,14 +6,14 @@ The application provides **winter care services**, **grooming**, **pet accessori
 ---
 
 ## 📸 Screenshot  
-> *(Replace the image URL with your own screenshot)*  
+
 ![WarmPaws Screenshot](https://i.ibb.co.com/mC3dFBNs/WarmPaws.png)
 
 ---
 
 ## 🌐 Live Demo
 
-🔗 **Live Website:** https://pet-care-26f18.web.app/  
+🔗 <a href="https://pet-care-26f18.web.app/" target="_blank">Live Website</a>
 
 ---
 
