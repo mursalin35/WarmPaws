@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Cozy Winter Sweater",
+    "image": "https://i.ibb.co.com/4R5d7Znt/dog-1.png",
+    "price": "$15",
+    "desc": "Keep your pet warm and stylish during chilly walks."
+  },
+  {
+    "id": 2,
+    "name": "Fleece Pet Blanket",
+    "image": "https://i.ibb.co.com/WpFpcf4R/dog-2-png.jpg",
+    "price": "$10",
+    "desc": "Soft and cozy blanket for extra comfort in winter."
+  },
+  {
+    "id": 3,
+    "name": "Winter Booties",
+    "image": "https://i.ibb.co.com/3yj4GtVV/dog-3.png",
+    "price": "$12",
+    "desc": "Protect paws from cold snow and slippery ice."
+  },
+  {
+    "id": 4,
+    "name": "Thermal Pet Bed",
+    "image": "https://i.ibb.co.com/CKPhfY2v/dog-4.png",
+    "price": "$25",
+    "desc": "A heated bed that keeps your pet warm all night long."
+  }
+]

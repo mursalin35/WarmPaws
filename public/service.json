@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold. Includes size measurement and thermal fabric fitting service.",
+    "image": "https://i.ibb.co.com/DPHQqxqp/pet-1.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo to protect your pet's skin from dryness.",
+    "image": "https://i.ibb.co.com/FQmDtbR/pet-2.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Heated Bed & Blanket Setup",
+    "providerName": "SnugglePet Supplies",
+    "providerEmail": "support@snugglepet.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Installation and setup of electric-heated pet beds and blankets for a cozy winter sleep environment.",
+    "image": "https://i.ibb.co.com/BKwHNrRf/pet-3.jpg",
+    "category": "Comfort"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Winter Health Checkup",
+    "providerName": "VetCare Plus",
+    "providerEmail": "contact@vetcareplus.com",
+    "price": 35,
+    "rating": 5.0,
+    "slotsAvailable": 6,
+    "description": "Comprehensive winter health check-up by certified veterinarians to ensure your pet stays healthy through the season.",
+    "image": "https://i.ibb.co.com/3mHHDskc/pet-4.jpg",
+    "category": "Health"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Winter Diet & Nutrition Plan",
+    "providerName": "HealthyTails Nutrition",
+    "providerEmail": "nutrition@healthytails.com",
+    "price": 20,
+    "rating": 4.6,
+    "slotsAvailable": 8,
+    "description": "Personalized winter diet chart prepared by pet nutritionists to boost immunity and maintain energy in cold weather.",
+    "image": "https://i.ibb.co.com/RTz7HmYz/pet-5.png",
+    "category": "Diet"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Snow Walk & Paw Protection Gear",
+    "providerName": "FurFriends Outdoor",
+    "providerEmail": "outdoor@furfriends.com",
+    "price": 28,
+    "rating": 4.8,
+    "slotsAvailable": 7,
+    "description": "Includes thermal paw shoes and guided snow-walk tips to make your pet's outdoor experience safe and enjoyable.",
+    "image": "https://i.ibb.co.com/0pZ6T87n/pet-6.png",
+    "category": "Outdoor"
+  }
+]

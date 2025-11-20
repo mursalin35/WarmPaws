@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Satsh Johnson",
+    "email": "satsh@gmail.com",
+    "image": "https://i.ibb.co.com/JW57Q6MJ/dr-1.png",
+    "rating": "4.9"
+  },
+  {
+    "id": 2,
+    "name": "Dr. James Carter",
+    "email": "james@gmail.com",
+    "image": "https://i.ibb.co.com/JwRsY64m/dr-2.png",
+    "rating": "4.8"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Emily Brown",
+    "email": "emaiy@gmail.com",
+    "image": "https://i.ibb.co.com/GfSMzQ8w/dr-3.png",
+    "rating": "4.7"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Kamal Buiya",
+    "email": "kaml@gmail.com",
+    "image": "https://i.ibb.co.com/BHPcTxZR/dr-4.png",
+    "rating": "4.7"
+  }
+]
+
+

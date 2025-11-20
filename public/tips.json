@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Hydration is Key",
+    "desc": "Pets can dehydrate even in cold weather. Always keep their water bowl clean and full."
+  },
+  {
+    "id": 2,
+    "title": "Protect Their Paws",
+    "desc": "Use pet-safe paw balm to prevent cracks and irritation from snow or rough surfaces."
+  },
+  {
+    "id": 3,
+    "title": "Warm Shelter",
+    "desc": "Ensure your pet has a cozy indoor space away from cold drafts and chilly air."
+  },
+  {
+    "id": 4,
+    "title": "Winter Diet Boost",
+    "desc": "Provide extra nutrients and calories to help pets maintain warmth and energy."
+  },
+  {
+    "id": 5,
+    "title": "Use Pet Blankets",
+    "desc": "Wrap your pet in soft fleece or thermal blankets for added comfort during cold nights."
+  },
+  {
+    "id": 6,
+    "title": "Limit Outdoor Time",
+    "desc": "Keep outdoor walks short to protect pets from frostbite and freezing temperatures."
+  }
+]

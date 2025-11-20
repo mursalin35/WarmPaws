@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #7b4628;
+  --color-secondary: #a86b46;
+  --color-base-100: #fff8f2;
+  --color-base-200: #6b3f22;
+  --color-accent: #b6d8c6;
+  --color-neutral: #fbf5ef;
+  --color-success: #b6d8c6;
+}
+
+/* active link  */
+a.active {
+  @apply text-[#7B4628] underline;
+}
