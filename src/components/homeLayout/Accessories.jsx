@@ -1,6 +1,7 @@
 import React, { useEffect, use } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import toast, { Toaster } from "react-hot-toast";
 
 const petPromise = fetch("/accessories.json").then((res) => res.json());
 
@@ -16,8 +17,13 @@ const Accessories = () => {
     });
   }, []);
 
+  const handleBuyNow = (itemName) => {
+    toast.success(`Purchase successful! You bought "${itemName}"`);
+  };
+
   return (
     <section className=" py-16">
+      <Toaster position="top-center" reverseOrder={false} />
       <div className=" mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">
           🐾 Pet Winter Accessories
@@ -47,7 +53,10 @@ const Accessories = () => {
                 <p className="text-gray-600 text-sm my-2">{item.desc}</p>
                 <div className="flex justify-between items-center mt-3">
                   <span className="text-[#B87333] font-bold">{item.price}</span>
-                  <button className="bg-[#B87333] cursor-pointer text-white text-sm px-3 py-1 rounded-lg hover:bg-[#a15f2a] transition">
+                  <button
+                    onClick={() => handleBuyNow(item.name)}
+                    className="bg-[#B87333] cursor-pointer text-white text-sm px-3 py-1 rounded-lg hover:bg-[#a15f2a] transition"
+                  >
                     Buy Now
                   </button>
                 </div>

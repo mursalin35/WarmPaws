@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router';
 import PopularServiceCard from '../components/homeLayout/PopularServiceCard';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import ServiceCard from '../components/homeLayout/ServiceCard';
 
 const Services = () => {
   const services = useLoaderData(); 
@@ -95,7 +96,7 @@ const Services = () => {
       {/* Services Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-y-16">
         {displayServices.map((service, index) => (
-          <PopularServiceCard
+          <ServiceCard
             key={service.serviceId}
             service={service}
             delay={index * 10} 
