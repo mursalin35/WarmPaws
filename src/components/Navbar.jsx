@@ -36,176 +36,167 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="bg-[#FFF8F1] border-b border-[#EAD9C9] p-4 flex shadow-sm sticky top-0 z-50">
-      <div className="flex justify-between items-center w-11/12 mx-auto relative">
-        {/* Logo */}
-        <div className="flex items-center gap-2 text-2xl font-bold text-[#5B3A1A]">
-          <Link className="flex gap-1 items-center" to="/">
-            <MdOutlinePets className="text-3xl text-[#8B5E3B]" />
-            WarmPaws
-          </Link>
-        </div>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 text-lg">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `font-medium ${
-                isActive
-                  ? "text-[#8B5E3B] underline"
-                  : "text-gray-700 hover:text-[#8B5E3B]"
-              } transition`
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/services"
-            className={({ isActive }) =>
-              `font-medium ${
-                isActive
-                  ? "text-[#8B5E3B] underline"
-                  : "text-gray-700 hover:text-[#8B5E3B]"
-              } transition`
-            }
-          >
-            Services
-          </NavLink>
-          <NavLink
-            to="/profile"
-            className={({ isActive }) =>
-              `font-medium ${
-                isActive
-                  ? "text-[#8B5E3B] underline"
-                  : "text-gray-700 hover:text-[#8B5E3B]"
-              } transition`
-            }
-          >
-            My Profile
-          </NavLink>
-        </div>
-
-        {/* Right Side (Avatar + Buttons) */}
-        <div className="flex items-center gap-3 relative">
-          {/* Avatar Dropdown */}
-          <div
-            className="relative hidden md:block"
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
-          >
-            <img
-              onClick={toggleMenu}
-              src={
-                user?.photoURL ||
-                "https://img.icons8.com/?size=100&id=0prbldgxVuTl&format=png&color=000000"
-              }
-              alt="User Avatar"
-              className="w-10 h-10 rounded-full border-2 border-[#EAD9C9] cursor-pointer"
-            />
-
-            <animated.div
-              style={dropdownAnimation}
-              className="absolute right-0 mt-2 bg-white border border-[#EAD9C9] shadow-lg rounded-xl p-3 w-48 text-sm z-50"
-            >
-              <p className="font-medium text-[#5B3A1A]">
-                {user?.displayName || "username"}
-              </p>
-              <p className="text-gray-500 text-xs mb-3">
-                {user?.email || "user@gmail.com"}
-              </p>
-              <button
-                onClick={handleViewProfile}
-                className="w-full cursor-pointer bg-[#8B5E3B] hover:bg-[#6C4428] text-white py-2 rounded-lg transition text-sm"
-              >
-                View Profile
-              </button>
-            </animated.div>
+    <div className="nav bg-[#FFF8F1] border-b border-[#EAD9C9] shadow-sm">
+      <nav className=" max-w-7xl mx-auto   py-4 flex  sticky top-0 z-50">
+        <div className="flex justify-between items-center w-11/12 mx-auto relative">
+          {/* Logo */}
+          <div className="flex items-center gap-2 text-2xl font-bold text-[#5B3A1A]">
+            <Link className="flex gap-1 items-center" to="/">
+              <MdOutlinePets className="text-3xl text-[#8B5E3B]" />
+              WarmPaws
+            </Link>
           </div>
 
-          {/* logic Buttons */}
-          <div className="hidden md:block">
-            {user ? (
-              <button
-                onClick={handleLogout}
-                className="bg-[#8B5E3B] cursor-pointer hover:bg-[#6C4428] text-white px-5 py-2 rounded-lg transition"
-              >
-                Logout
-              </button>
-            ) : (
-              <Link
-                to="/auth/login"
-                className="bg-[#8B5E3B] hover:bg-[#6C4428] text-white px-5 py-2 rounded-lg transition"
-              >
-                Login
-              </Link>
-            )}
-          </div>
-
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
-            {mobileMenuOpen ? (
-              <HiX
-                onClick={toggleMobileMenu}
-                className="text-3xl text-[#5B3A1A] cursor-pointer"
-              />
-            ) : (
-              <HiMenuAlt3
-                onClick={toggleMobileMenu}
-                className="text-3xl text-[#5B3A1A] cursor-pointer"
-              />
-            )}
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-[#FFF8F1] border-t border-[#EAD9C9] shadow-md flex flex-col items-center py-4 gap-4 text-lg md:hidden z-40 animate-fadeIn">
-            <NavLink
-              to="/"
-              onClick={toggleMobileMenu}
-              className="text-gray-700 hover:text-[#8B5E3B] transition font-medium"
-            >
+          {/* Desktop Menu */}
+          <div className=" hidden md:flex gap-8 text-lg ">
+            <NavLink to="/" className="navList">
               Home
             </NavLink>
-            <NavLink
-              to="/services"
-              onClick={toggleMobileMenu}
-              className="text-gray-700 hover:text-[#8B5E3B] transition font-medium"
-            >
+            <NavLink to="/services" className="navList">
               Services
             </NavLink>
-            <NavLink
-              to="/profile"
-              onClick={toggleMobileMenu}
-              className="text-gray-700 hover:text-[#8B5E3B] transition font-medium"
-            >
-              My Profile
+            <NavLink to="/about" className="navList">
+              About us
             </NavLink>
-
-            {user ? (
-              <button
-                onClick={() => {
-                  handleLogout();
-                  toggleMobileMenu();
-                }}
-                className="bg-[#8B5E3B] cursor-pointer hover:bg-[#6C4428] text-white px-6 py-2 rounded-lg transition"
-              >
-                Logout
-              </button>
-            ) : (
-              <Link
-                to="/auth/login"
-                onClick={toggleMobileMenu}
-                className="bg-[#8B5E3B] hover:bg-[#6C4428] text-white px-6 py-2 rounded-lg transition"
-              >
-                Login
-              </Link>
-            )}
+            <NavLink to="/contact" className="navList">
+              Contact
+            </NavLink>
           </div>
-        )}
-      </div>
-    </nav>
+
+          {/* Right Side (Avatar + Buttons) */}
+          <div className="flex items-center gap-3 relative">
+            {/* Avatar Dropdown */}
+            <div
+              className="relative hidden md:block"
+              onMouseEnter={() => setHovering(true)}
+              onMouseLeave={() => setHovering(false)}
+            >
+              <img
+                onClick={toggleMenu}
+                src={
+                  user?.photoURL ||
+                  "https://img.icons8.com/?size=100&id=0prbldgxVuTl&format=png&color=000000"
+                }
+                alt="User Avatar"
+                className="w-10 h-10 rounded-full border-2 border-[#EAD9C9] cursor-pointer"
+              />
+
+              <animated.div
+                style={dropdownAnimation}
+                className="absolute right-0 mt-2 bg-white border border-[#EAD9C9] shadow-lg rounded-xl p-3 min-w-48 text-sm z-50"
+              >
+                <div className="border-b-[1.5px] mb-2">
+                  <p className="font-medium text-[#5B3A1A]">
+                  {user?.displayName || "username"}
+                </p>
+                <p className="text-gray-500 text-xs mb-1">
+                  {user?.email || "user@gmail.com"}
+                </p>
+                </div>
+                <NavLink to="/profile" className="navList font-medium">
+                  My Profile
+                </NavLink>
+                <button
+                  onClick={handleViewProfile}
+                  className="w-full cursor-pointer mt-4 bg-[#8B5E3B] hover:bg-[#6C4428] text-white py-2 rounded-lg transition text-sm"
+                >
+                  View Profile
+                </button>
+              </animated.div>
+            </div>
+
+            {/* logic Buttons */}
+            <div className="hidden md:block">
+              {user ? (
+                <button
+                  onClick={handleLogout}
+                  className="bg-[#8B5E3B] cursor-pointer hover:bg-[#6C4428] text-white px-5 py-2 rounded-lg transition"
+                >
+                  Logout
+                </button>
+              ) : (
+                <Link
+                  to="/auth/login"
+                  className="bg-[#8B5E3B] hover:bg-[#6C4428] text-white px-5 py-2 rounded-lg transition"
+                >
+                  Login
+                </Link>
+              )}
+            </div>
+
+            {/* Mobile Menu Toggle */}
+            <div className="md:hidden">
+              {mobileMenuOpen ? (
+                <HiX
+                  onClick={toggleMobileMenu}
+                  className="text-3xl text-[#5B3A1A] cursor-pointer"
+                />
+              ) : (
+                <HiMenuAlt3
+                  onClick={toggleMobileMenu}
+                  className="text-3xl text-[#5B3A1A] cursor-pointer"
+                />
+              )}
+            </div>
+          </div>
+
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="absolute top-full left-0 w-full bg-[#FFF8F1] border-t border-[#EAD9C9] shadow-md flex flex-col items-center py-4 gap-4 text-lg md:hidden z-40 animate-fadeIn">
+              <NavLink
+                to="/"
+                onClick={toggleMobileMenu}
+                className="text-gray-700 hover:text-[#8B5E3B] transition font-medium"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/services"
+                onClick={toggleMobileMenu}
+                className="text-gray-700 hover:text-[#8B5E3B] transition font-medium"
+              >
+                Services
+              </NavLink>
+
+              <NavLink
+                to="/profile"
+                onClick={toggleMobileMenu}
+                className="text-gray-700 hover:text-[#8B5E3B] transition font-medium"
+              >
+                My Profile
+              </NavLink>
+              <NavLink to="/about" className="navList hover:text-[#8B5E3B] transition font-medium">
+                About us
+              </NavLink>
+              <NavLink to="/contact" className="navList hover:text-[#8B5E3B] transition font-medium">
+                Contact
+              </NavLink>
+              
+              {user ? (
+                <button
+                  onClick={() => {
+                    handleLogout();
+                    toggleMobileMenu();
+                  }}
+                  className="bg-[#8B5E3B]  hover:bg-[#6C4428] text-white px-6 py-2 rounded-lg transition"
+                >
+                  Logout
+                </button>
+              ) : (
+                <Link to="/auth/login">
+                  <button
+                    onClick={toggleMobileMenu}
+                    className="bg-[#8B5E3B] hover:bg-[#6C4428]  text-white px-6 py-2 rounded-lg transition"
+                  >
+                    Login
+                  </button>
+                </Link>
+              )}
+            </div>
+          )}
+        </div>
+      </nav>
+    </div>
   );
 };
 

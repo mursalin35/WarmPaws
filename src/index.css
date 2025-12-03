@@ -5,7 +5,6 @@
 
 * {
   font-family: "Roboto", sans-serif;
-
 }
 
 @plugin "daisyui/theme" {
@@ -23,4 +22,21 @@
 /* active link  */
 a.active {
   @apply text-[#7B4628] underline;
+}
+
+/* className={({ isActive }) =>
+              `font-medium ${
+                isActive
+                  ? "text-[#8B5E3B] underline"
+                  : "text-gray-700 hover:text-[#8B5E3B]"
+              } transition`
+            } */ 
+
+.nav .active {
+  color: #8B5E3B;
+  transition: all 0.3s ease;
+}
+
+.navList:hover {
+  color: #8B5E3B;
 }
