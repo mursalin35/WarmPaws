@@ -7,7 +7,7 @@ import { Outlet } from "react-router";
 
 const MainLayout = () => {
   return (
-    <div className="bg-[#FFF8F1] w-7xl mx-auto">
+    <div className="bg-[#FFF8F1] max-w-7xl mx-auto">
       <header>
         <Navbar></Navbar>
       </header>

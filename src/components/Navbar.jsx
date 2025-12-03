@@ -36,7 +36,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="bg-[#FFF8F1] border-b border-[#EAD9C9] py-4 shadow-sm sticky top-0 z-50">
+    <nav className="bg-[#FFF8F1] border-b border-[#EAD9C9] p-4 flex shadow-sm sticky top-0 z-50">
       <div className="flex justify-between items-center w-11/12 mx-auto relative">
         {/* Logo */}
         <div className="flex items-center gap-2 text-2xl font-bold text-[#5B3A1A]">
