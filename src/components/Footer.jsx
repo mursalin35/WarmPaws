@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaPaw } from "react-
 const Footer = () => {
   return (
    <div className="">
-     <footer className=" max-w-7xl mx-auto text-[#5A3A2E] mt-20 border-t border-[#EAD9C9]">
+     <footer className="bg-[#FFF8F1] max-w-7xl mx-auto text-[#5A3A2E] mt-20 border-t border-[#EAD9C9]">
       <div className="w-11/12 mx-auto py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Info */}
         <div>
@@ -48,7 +48,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Support</h3>
           <ul className="space-y-2 text-sm">
             <li><a href="contact" className="hover:text-[#B87333] transition hover:underline">Contact Us</a></li>
-            <li><a  href="#" className="hover:text-[#B87333] transition hover:underline ">FAQs</a></li>
+            <li><a href="#" className="hover:text-[#B87333] transition hover:underline">FAQs</a></li>
             <li><a href="#" className="hover:text-[#B87333] transition hover:underline">Privacy Policy</a></li>
             <li><a href="#" className="hover:text-[#B87333] transition hover:underline">Terms & Conditions</a></li>
           </ul>
