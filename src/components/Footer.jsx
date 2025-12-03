@@ -81,14 +81,7 @@ const Footer = () => {
                   My Profile
                 </a>
               </li>
-              <li>
-                <a
-                  href="/about"
-                  className="hover:text-[#B87333] transition hover:underline"
-                >
-                  About us
-                </a>
-              </li>
+           
             </ul>
           </div>
 
@@ -96,38 +89,24 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2 text-sm">
-              <li>
+                 <li>
                 <a
-                  href="contact"
+                  href="/about"
                   className="hover:text-[#B87333] transition hover:underline"
                 >
-                  Contact Us
+                  About us
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/contact"
                   className="hover:text-[#B87333] transition hover:underline"
                 >
-                  FAQs
+                  Contact
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[#B87333] transition hover:underline"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[#B87333] transition hover:underline"
-                >
-                  Terms & Conditions
-                </a>
-              </li>
+              
+        
             </ul>
           </div>
 
@@ -135,22 +114,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Stay Connected</h3>
             <p className="text-sm text-[#7A5D4A] mb-3">
-              Get the latest winter care updates, tips, and pet health advice
-              straight to your inbox.
+             Get the latest winter care updates, tips, and pet health advice — reach out through our contact page to stay connected.
             </p>
-            <form className="flex items-center">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-3 py-2 rounded-l-lg border border-[#EAD9C9] focus:outline-none "
-              />
-              <button
-                type="button"
-                className="bg-[#B87333] text-white px-4 py-2 rounded-r-lg outline-1 outline-[#B87333] hover:bg-[#9a5b29] transition cursor-pointer"
-              >
-                Subscribe
-              </button>
-            </form>
+            
           </div>
         </div>
       </footer>
