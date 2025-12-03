@@ -29,11 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/services/:serviceId",
-        element: (
-          <PrivetRoute>
-            <PopularServiceDetails />
-          </PrivetRoute>
-        ),
+        element: <PopularServiceDetails />,
         loader: async ({ params }) => {
           const res = await fetch("../service.json");
           const data = await res.json();

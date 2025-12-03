@@ -12,11 +12,11 @@ const PopularServiceCard = ({ service, delay }) => {
       data-aos-delay={delay} 
     >
       {/* Image */}
-      <div className="h-56 overflow-hidden">
+      <div className="h-56  overflow-hidden">
         <img
           src={image}
           alt={serviceName}
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          className="w-full  h-full object-cover hover:scale-105 transition-transform duration-500"
         />
       </div>
 

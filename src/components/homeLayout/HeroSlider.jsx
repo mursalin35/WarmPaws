@@ -6,16 +6,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import { Link } from "react-router";
 
 // Images + slogans 
 const sliderData = [
   {
     image: "https://i.ibb.co.com/DPHQqxqp/pet-1.jpg",
-    slogan: ["Keep your furry friend cozy", "this winter ❄️"],
+    slogan: ["Keep your furry friend", "cozy always ❄️"],
   },
   {
     image: "https://i.ibb.co.com/FQmDtbR/pet-2.jpg",
-    slogan: ["Warm hearts,", "warm paws ❤️"],
+    slogan: ["Warm hearts, warm paws", "pure love ❤️"],
   },
   {
     image: "https://i.ibb.co.com/0pZ6T87n/pet-6.png",
@@ -25,15 +26,15 @@ const sliderData = [
 
 const HeroSlider = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 items-center justify-between w-11/12 mx-auto gap-8 md:gap-6 py-8 md:py-12">
+    <div className="grid grid-cols-1 md:grid-cols-12  items-center justify-between w-11/12 mx-auto gap-8 md:gap-6 py-8 md:py-12">
       {/* Left Content Section */}
       <div className="md:col-span-5 text-center md:text-left">
         <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-gray-800 leading-tight mb-6">
           Winter pet platform for local care, clothing, grooming, and safety tips
         </h1>
-        <button className="btn bg-[#A47C55] hover:bg-[#8B5E3B] border-none text-white px-6 sm:px-8 py-3 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-base sm:text-lg">
+        <Link to="/about" className="btn bg-[#A47C55] hover:bg-[#8B5E3B] border-none text-white px-6 sm:px-8 py-3 rounded-lg shadow-lg transition duration-300 transform hover:scale-105 text-base sm:text-lg">
           Learn More
-        </button>
+        </Link>
       </div>
 
       {/* Right Slider Section */}
@@ -68,7 +69,7 @@ const HeroSlider = () => {
                   className="w-full h-full object-cover"
                 />
                 {/* Overlay slogan (2-line) */}
-                <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-center px-2 sm:px-4">
+                <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-2 sm:px-4">
                   <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold drop-shadow-lg leading-snug">
                     {slide.slogan[0]} <br /> {slide.slogan[1]}
                   </h2>
