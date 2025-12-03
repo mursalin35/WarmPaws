@@ -3,7 +3,8 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaPaw } from "react-
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FFF8F1] text-[#5A3A2E] mt-20 border-t border-[#EAD9C9]">
+   <div className="">
+     <footer className=" max-w-7xl mx-auto text-[#5A3A2E] mt-20 border-t border-[#EAD9C9]">
       <div className="w-11/12 mx-auto py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Info */}
         <div>
@@ -19,14 +20,14 @@ const Footer = () => {
             <a href="https://www.facebook.com/mursalin07" target="_blank" className="bg-[#B87333]/20 p-2 rounded-full hover:bg-[#B87333] hover:text-white transition">
               <FaFacebookF />
             </a>
+            <a href="https://www.linkedin.com/in/mursalin07/" target="_blank" className="bg-[#B87333]/20 p-2 rounded-full hover:bg-[#B87333] hover:text-white transition">
+              <FaLinkedinIn />
+            </a>
             <a href="https://www.instagram.com/msmursalin07/?hl=en" target="_blank" className="bg-[#B87333]/20 p-2 rounded-full hover:bg-[#B87333] hover:text-white transition">
               <FaInstagram />
             </a>
             <a href="#" className="bg-[#B87333]/20 p-2 rounded-full hover:bg-[#B87333] hover:text-white transition">
               <FaTwitter />
-            </a>
-            <a href="https://www.linkedin.com/in/mursalin07/" target="_blank" className="bg-[#B87333]/20 p-2 rounded-full hover:bg-[#B87333] hover:text-white transition">
-              <FaLinkedinIn />
             </a>
           </div>
         </div>
@@ -35,10 +36,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-[#B87333] transition hover:underline">Home</a></li>
-            <li><a href="#" className="hover:text-[#B87333] transition hover:underline">Services</a></li>
-            <li><a href="#" className="hover:text-[#B87333] transition hover:underline">My Profile</a></li>
-            <li><a href="#" className="hover:text-[#B87333] transition hover:underline">Pet Care Tips</a></li>
+            <li><a href="/" className="hover:text-[#B87333] transition hover:underline">Home</a></li>
+            <li><a href="/services" className="hover:text-[#B87333] transition hover:underline">Services</a></li>
+            <li><a href="/profile" className="hover:text-[#B87333] transition hover:underline">My Profile</a></li>
+            <li><a href="/about" className="hover:text-[#B87333] transition hover:underline">About us</a></li>
           </ul>
         </div>
 
@@ -46,10 +47,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Support</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-[#B87333] transition hover:underline">FAQs</a></li>
+            <li><a href="contact" className="hover:text-[#B87333] transition hover:underline">Contact Us</a></li>
+            <li><a  href="#" className="hover:text-[#B87333] transition hover:underline ">FAQs</a></li>
             <li><a href="#" className="hover:text-[#B87333] transition hover:underline">Privacy Policy</a></li>
             <li><a href="#" className="hover:text-[#B87333] transition hover:underline">Terms & Conditions</a></li>
-            <li><a href="#" className="hover:text-[#B87333] transition hover:underline">Contact Us</a></li>
           </ul>
         </div>
 
@@ -81,6 +82,7 @@ const Footer = () => {
         © {new Date().getFullYear()} WarmPaws — All Rights Reserved | Designed by <span className="font-semibold">M.S Mursalin</span>
       </div>
     </footer>
+   </div>
   );
 };
 

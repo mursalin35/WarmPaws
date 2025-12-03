@@ -8,12 +8,16 @@ import { Outlet } from "react-router";
 const MainLayout = () => {
   return (
     <div className="bg-[#FFF8F1] ">
-      <header>
+      <header >
         <Navbar></Navbar>
       </header>
 
       <main className="max-w-7xl mx-auto">
-        <Outlet></Outlet>
+
+         <div className="mx-4">
+          <Outlet></Outlet>
+         </div>
+
       </main>
 
       <footer>
