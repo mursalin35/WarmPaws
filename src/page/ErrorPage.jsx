@@ -29,11 +29,11 @@ const ErrorPage = () => {
       {/* Back Home Button */}
       <button
         onClick={() => navigate("/")}
-        className="bg-[#B87333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#9b5b26] transition"
+        className="bg-[#B87333] cursor-pointer text-white px-6 py-2 rounded-lg font-medium hover:bg-[#9b5b26] transition"
       >
         Go Back Home
       </button>
-
+    
     </div>
   );
 };

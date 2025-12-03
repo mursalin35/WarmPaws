@@ -23,7 +23,7 @@ const PopularServices = () => {
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-y-16">
-        {services.map((service, index) => (
+        {services.slice(0, 6).map((service, index) => (
           <PopularServiceCard
             key={service.serviceId}
             service={service}
