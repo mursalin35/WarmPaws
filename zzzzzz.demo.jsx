@@ -1,242 +1,81 @@
-[
-  {
-    "serviceId": 7,
-    "serviceName": "Winter Ear & Nose Protection",
-    "providerName": "FrostPet Care",
-    "providerEmail": "care@frostpet.com",
-    "price": 18,
-    "rating": 4.7,
-    "slotsAvailable": 4,
-    "description": "Gentle protection cream for ears and nose to prevent cracking during harsh winter weather.",
-    "image": "https://i.ibb.co.com/xyz001/pet-7.jpg",
-    "category": "Health"
-  },
-  {
-    "serviceId": 8,
-    "serviceName": "Thermal Jacket Custom Design",
-    "providerName": "PawFashion Lab",
-    "providerEmail": "design@pawfashion.com",
-    "price": 45,
-    "rating": 4.9,
-    "slotsAvailable": 3,
-    "description": "Customized thermal winter jacket for pets with color and fabric options.",
-    "image": "https://i.ibb.co.com/xyz002/pet-8.jpg",
-    "category": "Clothing"
-  },
-  {
-    "serviceId": 9,
-    "serviceName": "Winter Fur Moisturizing Bath",
-    "providerName": "CozyPets Grooming",
-    "providerEmail": "hello@cozypets.com",
-    "price": 22,
-    "rating": 4.6,
-    "slotsAvailable": 6,
-    "description": "Warm bath with winter-safe conditioner to prevent dry skin and shedding.",
-    "image": "https://i.ibb.co.com/xyz003/pet-9.jpg",
-    "category": "Grooming"
-  },
-  {
-    "serviceId": 10,
-    "serviceName": "Pet Winter Photography Session",
-    "providerName": "SnowLens Studio",
-    "providerEmail": "studio@snowlens.com",
-    "price": 50,
-    "rating": 5.0,
-    "slotsAvailable": 2,
-    "description": "Professional winter-themed photoshoot for your furry companion.",
-    "image": "https://i.ibb.co.com/xyz004/pet-10.jpg",
-    "category": "Lifestyle"
-  },
-  {
-    "serviceId": 11,
-    "serviceName": "Winter Play Zone Setup",
-    "providerName": "FurryFun Co.",
-    "providerEmail": "fun@furryfun.com",
-    "price": 38,
-    "rating": 4.8,
-    "slotsAvailable": 5,
-    "description": "Indoor winter-safe play zone installation with toys and warm flooring.",
-    "image": "https://i.ibb.co.com/xyz005/pet-11.jpg",
-    "category": "Comfort"
-  },
-  {
-    "serviceId": 12,
-    "serviceName": "Vitamin Boost for Winter",
-    "providerName": "HealthyTails Nutrition",
-    "providerEmail": "nutrition@healthytails.com",
-    "price": 16,
-    "rating": 4.7,
-    "slotsAvailable": 10,
-    "description": "Winter supplement plan to boost immunity and energy.",
-    "image": "https://i.ibb.co.com/xyz006/pet-12.jpg",
-    "category": "Diet"
-  },
-  {
-    "serviceId": 13,
-    "serviceName": "Paw Wax Protection Service",
-    "providerName": "WarmSteps Care",
-    "providerEmail": "support@warmsteps.com",
-    "price": 12,
-    "rating": 4.5,
-    "slotsAvailable": 9,
-    "description": "Protective paw wax application to shield from snow and frostbite.",
-    "image": "https://i.ibb.co.com/xyz007/pet-13.jpg",
-    "category": "Health"
-  },
-  {
-    "serviceId": 14,
-    "serviceName": "Winter Allergy Consultation",
-    "providerName": "VetCare Plus",
-    "providerEmail": "contact@vetcareplus.com",
-    "price": 32,
-    "rating": 5.0,
-    "slotsAvailable": 4,
-    "description": "Expert allergy check and winter sensitivity assessment.",
-    "image": "https://i.ibb.co.com/xyz008/pet-14.jpg",
-    "category": "Health"
-  },
-  {
-    "serviceId": 15,
-    "serviceName": "Pet Sweater Knitting Service",
-    "providerName": "CozyKnit Pets",
-    "providerEmail": "knit@cozyknit.com",
-    "price": 28,
-    "rating": 4.9,
-    "slotsAvailable": 3,
-    "description": "Handmade knitted winter sweaters crafted to fit your pet.",
-    "image": "https://i.ibb.co.com/xyz009/pet-15.jpg",
-    "category": "Clothing"
-  },
-  {
-    "serviceId": 16,
-    "serviceName": "Winter Fur Detangling Treatment",
-    "providerName": "GroomPro Studio",
-    "providerEmail": "info@groompro.com",
-    "price": 24,
-    "rating": 4.8,
-    "slotsAvailable": 7,
-    "description": "Special detangling and conditioning for winter-dry fur.",
-    "image": "https://i.ibb.co.com/xyz010/pet-16.jpg",
-    "category": "Grooming"
-  },
-  {
-    "serviceId": 17,
-    "serviceName": "Winter Fitness Indoor Exercise",
-    "providerName": "PetActivity Hub",
-    "providerEmail": "active@pethub.com",
-    "price": 18,
-    "rating": 4.6,
-    "slotsAvailable": 8,
-    "description": "Indoor mini workouts to keep pets active during cold days.",
-    "image": "https://i.ibb.co.com/xyz011/pet-17.jpg",
-    "category": "Lifestyle"
-  },
-  {
-    "serviceId": 18,
-    "serviceName": "Heated Water Bowl Setup",
-    "providerName": "SnugglePet Supplies",
-    "providerEmail": "support@snugglepet.com",
-    "price": 20,
-    "rating": 4.7,
-    "slotsAvailable": 6,
-    "description": "Installation of warm water bowls to prevent freezing.",
-    "image": "https://i.ibb.co.com/xyz012/pet-18.jpg",
-    "category": "Comfort"
-  },
-  {
-    "serviceId": 19,
-    "serviceName": "Winter Sleep Routine Consultation",
-    "providerName": "PawSleep Center",
-    "providerEmail": "sleep@pawsleep.com",
-    "price": 26,
-    "rating": 4.9,
-    "slotsAvailable": 5,
-    "description": "Consultation for maintaining healthy sleep during winter.",
-    "image": "https://i.ibb.co.com/xyz013/pet-19.jpg",
-    "category": "Health"
-  },
-  {
-    "serviceId": 20,
-    "serviceName": "Snow Safety Outdoor Guide",
-    "providerName": "FurFriends Outdoor",
-    "providerEmail": "outdoor@furfriends.com",
-    "price": 15,
-    "rating": 4.5,
-    "slotsAvailable": 12,
-    "description": "Expert guide for safe outdoor snow adventures.",
-    "image": "https://i.ibb.co.com/xyz014/pet-20.jpg",
-    "category": "Outdoor"
-  },
-  {
-    "serviceId": 21,
-    "serviceName": "Thermal Crate Padding Setup",
-    "providerName": "WarmNest Supplies",
-    "providerEmail": "nest@warmnest.com",
-    "price": 30,
-    "rating": 5.0,
-    "slotsAvailable": 4,
-    "description": "Installing warm, winter-friendly padding inside pet crates.",
-    "image": "https://i.ibb.co.com/xyz015/pet-21.jpg",
-    "category": "Comfort"
-  },
-  {
-    "serviceId": 22,
-    "serviceName": "Winter Hair Shedding Control",
-    "providerName": "GroomPro Studio",
-    "providerEmail": "info@groompro.com",
-    "price": 22,
-    "rating": 4.6,
-    "slotsAvailable": 9,
-    "description": "Seasonal shedding management with premium brushes and oils.",
-    "image": "https://i.ibb.co.com/xyz016/pet-22.jpg",
-    "category": "Grooming"
-  },
-  {
-    "serviceId": 23,
-    "serviceName": "Frozen Treat Winter Edition",
-    "providerName": "HealthyTails Nutrition",
-    "providerEmail": "nutrition@healthytails.com",
-    "price": 10,
-    "rating": 4.5,
-    "slotsAvailable": 15,
-    "description": "Special winter soft treats made from natural ingredients.",
-    "image": "https://i.ibb.co.com/xyz017/pet-23.jpg",
-    "category": "Diet"
-  },
-  {
-    "serviceId": 24,
-    "serviceName": "Pet Scarf & Hat Combo",
-    "providerName": "PawFashion Lab",
-    "providerEmail": "design@pawfashion.com",
-    "price": 14,
-    "rating": 4.8,
-    "slotsAvailable": 6,
-    "description": "Cute winter scarf and wool hat combo for pets.",
-    "image": "https://i.ibb.co.com/xyz018/pet-24.jpg",
-    "category": "Clothing"
-  },
-  {
-    "serviceId": 25,
-    "serviceName": "Winter Behavioral Training",
-    "providerName": "SmartPet Training",
-    "providerEmail": "train@smartpet.com",
-    "price": 35,
-    "rating": 4.9,
-    "slotsAvailable": 5,
-    "description": "Seasonal home-behavior training to reduce winter stress.",
-    "image": "https://i.ibb.co.com/xyz019/pet-25.jpg",
-    "category": "Lifestyle"
-  },
-  {
-    "serviceId": 26,
-    "serviceName": "Warm Blanket Refresh Wash",
-    "providerName": "CozyWash Service",
-    "providerEmail": "wash@cozywash.com",
-    "price": 12,
-    "rating": 4.7,
-    "slotsAvailable": 11,
-    "description": "Deep cleaning and freshening of pet winter blankets.",
-    "image": "https://i.ibb.co.com/xyz020/pet-26.jpg",
-    "category": "Comfort"
-  }
-]
+import React from "react";
+import { FaStar, FaRegClock, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+const PopularServiceCard = ({ service, delay }) => {
+  const {
+    serviceId,
+    serviceName,
+    image,
+    price,
+    rating,
+    category,
+    slotsAvailable,
+    description,
+    providerName,
+    providerEmail,
+  } = service;
+
+  return (
+    <div
+      className="bg-gradient-to-b from-[#FFF8F1] to-[#FFEFD6] rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 border border-[#EAD9C9] overflow-hidden"
+      data-aos="fade-up"
+      data-aos-delay={delay}
+    >
+      {/* Image */}
+      <div className="relative h-56 overflow-hidden rounded-t-3xl">
+        <img
+          src={image}
+          alt={serviceName}
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute top-2 right-2 bg-[#A47C55] text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
+          {category}
+        </div>
+      </div>
+
+      {/* Info */}
+      <div className="p-5 flex flex-col justify-between h-[300px]">
+        <div>
+          <h2 className="text-xl font-bold text-[#5B3A1A] mb-2 line-clamp-2">
+            {serviceName}
+          </h2>
+          <p className="text-sm text-[#A47C55] mb-3 line-clamp-3">{description}</p>
+
+          {/* Provider */}
+          <div className="flex items-center text-[#5B3A1A] text-sm mb-3 space-x-2">
+            <FaEnvelope className="text-[#A47C55]" />
+            <span className="font-medium">{providerName}</span>
+          </div>
+
+          {/* Rating & Slots */}
+          <div className="flex justify-between items-center mb-4">
+            <div className="flex items-center">
+              <FaStar className="text-yellow-500" />
+              <span className="ml-1 text-[#5B3A1A] font-medium">{rating}</span>
+            </div>
+            <div className="flex items-center text-sm text-[#A47C55]">
+              <FaRegClock className="mr-1" />
+              <span>{slotsAvailable} slots</span>
+            </div>
+          </div>
+
+          {/* Price */}
+          <p className="text-lg font-semibold text-[#8B5E3B] mb-2">
+            ${price} 
+            <span className="text-sm font-normal text-[#A47C55]"> / service</span>
+          </p>
+        </div>
+
+        {/* View Details Button */}
+        <Link to={`/services/${serviceId}`}>
+          <button className="mt-2 w-full bg-[#A47C55] hover:bg-[#8B5E3B] text-white font-medium py-2 rounded-xl transition-colors duration-300">
+            View Details
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default PopularServiceCard;

@@ -10,6 +10,8 @@ import AuthLayout from "../Layout/AuthLayout";
 import PrivetRoute from "../provider/PrivetRoute";
 import ForgetPassword from "../page/ForgetPassword ";
 import ErrorPage from "../page/ErrorPage";
+import AboutUs from "../page/About";
+import Contact from "../page/Contact";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
           );
           return single || null;
         },
+      },
+      {
+        path: "/about",
+        Component: AboutUs,
+      },
+      {
+        path: "/contact",
+        Component: Contact,
       },
       {
         path: "/profile",
