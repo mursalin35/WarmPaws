@@ -24,7 +24,7 @@ const MeetOurVets = () => {
             <h3 className="text-lg font-semibold text-[#3B2F2F] mb-2">
               {vet.name}
             </h3>
-            <span className="text-xs">{vet.email}</span>
+            <span className="text-xs text-black">{vet.email}</span>
             <div className="flex items-center text-[#D97706] mt-2">
               <FaStar fill="#D97706" size={18} />
               <span className="ml-2 font-medium">{vet.rating}</span>

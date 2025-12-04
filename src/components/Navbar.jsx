@@ -36,8 +36,8 @@ const Navbar = () => {
   });
 
   return (
-    <div className="nav bg-[#FFF8F1] border-b border-[#EAD9C9] shadow-sm">
-      <nav className=" max-w-7xl mx-auto   py-4 flex  sticky top-0 z-50">
+    <div className="nav bg-[#FFF8F1] border-b border-[#EAD9C9] shadow-sm sticky top-0 z-50">
+      <nav className=" max-w-7xl mx-auto   py-4 flex  ">
         <div className="flex justify-between items-center w-11/12 mx-auto relative">
           {/* Logo */}
           <div className="flex items-center gap-2 text-2xl font-bold text-[#5B3A1A]">
@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className=" hidden md:flex gap-8 text-lg ">
+          <div className=" hidden md:flex gap-8 text-lg text-black">
             <NavLink to="/" className="navList">
               Home
             </NavLink>
@@ -85,15 +85,18 @@ const Navbar = () => {
                 style={dropdownAnimation}
                 className="absolute right-0 mt-2 bg-white border border-[#EAD9C9] shadow-lg rounded-xl p-3 min-w-48 text-sm z-50"
               >
-                <div className="border-b-[1.5px] mb-2">
+                <div className="border-b-[1.5px] border-[#5B3A1A] mb-2">
                   <p className="font-medium text-[#5B3A1A]">
-                  {user?.displayName || "username"}
-                </p>
-                <p className="text-gray-500 text-xs mb-1">
-                  {user?.email || "user@gmail.com"}
-                </p>
+                    {user?.displayName || "username"}
+                  </p>
+                  <p className="text-gray-500 text-xs mb-1">
+                    {user?.email || "user@gmail.com"}
+                  </p>
                 </div>
-                <NavLink to="/profile" className="navList font-medium">
+                <NavLink
+                  to="/profile"
+                  className="navList font-medium text-black"
+                >
                   My Profile
                 </NavLink>
                 <button
@@ -142,7 +145,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="absolute top-full left-0 w-full bg-[#FFF8F1] border-t border-[#EAD9C9] shadow-md flex flex-col items-center py-4 gap-4 text-lg md:hidden z-40 animate-fadeIn">
+            <div className="absolute text-black top-full left-0 w-full bg-[#FFF8F1] border-t border-[#EAD9C9] shadow-md flex flex-col items-center py-4 gap-4 text-lg md:hidden z-40 animate-fadeIn">
               <NavLink
                 to="/"
                 onClick={toggleMobileMenu}
@@ -165,13 +168,19 @@ const Navbar = () => {
               >
                 My Profile
               </NavLink>
-              <NavLink to="/about" className="navList hover:text-[#8B5E3B] transition font-medium">
+              <NavLink
+                to="/about"
+                className="navList hover:text-[#8B5E3B] transition font-medium"
+              >
                 About us
               </NavLink>
-              <NavLink to="/contact" className="navList hover:text-[#8B5E3B] transition font-medium">
+              <NavLink
+                to="/contact"
+                className="navList hover:text-[#8B5E3B] transition font-medium"
+              >
                 Contact
               </NavLink>
-              
+
               {user ? (
                 <button
                   onClick={() => {

@@ -107,7 +107,7 @@ const PopularServiceDetails = () => {
                 setFormData({ ...formData, name: e.target.value })
               }
               placeholder="Enter your name"
-              className="w-full p-3 rounded-xl border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373] text-sm sm:text-base"
+              className="w-full p-3 text-black rounded-xl border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373] text-sm sm:text-base"
             />
           </div>
 
@@ -125,7 +125,7 @@ const PopularServiceDetails = () => {
                 setFormData({ ...formData, email: e.target.value })
               }
               placeholder="Enter your email"
-              className="w-full p-3 rounded-xl border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373] text-sm sm:text-base"
+              className="w-full p-3 rounded-xl  text-black border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373] text-sm sm:text-base"
             />
           </div>
 

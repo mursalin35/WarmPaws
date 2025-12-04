@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router';
 import PopularServiceCard from '../components/homeLayout/PopularServiceCard';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import ServiceCard from '../components/homeLayout/ServiceCard';
+import ServiceCard from '../components/ServiceCard';
 
 const Services = () => {
   const services = useLoaderData(); 
@@ -68,7 +68,7 @@ const Services = () => {
       {/* Sorting & Filtering Controls */}
       <div className="flex justify-between items-center gap-4 mb-8 flex-wrap">
         {/* Filter */}
-        <div>
+        <div className='text-black'>
           <label className="mr-2 font-semibold">Filter by Category:</label>
           <select value={filterCategory} onChange={handleFilterChange} className="border rounded px-2 py-1">
             <option value="All">All</option>
@@ -83,7 +83,7 @@ const Services = () => {
         </div>
 
         {/* Sort */}
-        <div>
+        <div className='text-black'>
           <label className="mr-2 font-semibold">Sort by Price:</label>
           <select value={sortOrder} onChange={handleSortChange} className="border rounded px-2 py-1">
             <option value="filter">Filter</option> 

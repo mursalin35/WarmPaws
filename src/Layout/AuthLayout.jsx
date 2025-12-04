@@ -8,15 +8,15 @@ const AuthLayout = () => {
   return (
     <div className="bg-[#FFF8F1] ">
         <ScrollToTop/>
-      <header>
+
         <Navbar></Navbar>
-      </header>
+    
       <main className="max-w-7xl mx-auto">
         <Outlet></Outlet>
       </main>
-      <footer>
+   
         <Footer></Footer>
-      </footer>
+    
     </div>
   );
 };

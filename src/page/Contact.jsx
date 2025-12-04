@@ -38,7 +38,7 @@ const Contact = () => {
               setFormData({ ...formData, name: e.target.value })
             }
             placeholder="Enter your name"
-            className="w-full p-3 rounded-xl border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373]"
+            className="w-full p-3 rounded-xl text-black border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373]"
           />
         </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
               setFormData({ ...formData, email: e.target.value })
             }
             placeholder="Enter your email"
-            className="w-full p-3 rounded-xl border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373]"
+            className="w-full p-3 rounded-xl text-black border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373]"
           />
         </div>
 
@@ -65,7 +65,7 @@ const Contact = () => {
               setFormData({ ...formData, message: e.target.value })
             }
             placeholder="Your message..."
-            className="w-full p-3 rounded-xl border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373] h-32 resize-none"
+            className="w-full p-3 rounded-xl text-black border border-[#EAD9C9] focus:outline-none focus:ring-2 focus:ring-[#D4A373] h-32 resize-none"
           />
         </div>
 
