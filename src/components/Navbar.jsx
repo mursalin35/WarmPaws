@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useRef, useEffect } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { MdOutlinePets } from "react-icons/md";
 import { AuthContext } from "../provider/AuthProvider";
@@ -8,36 +8,48 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [hovering, setHovering] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
 
+  const dropdownRef = useRef(null);
+
+  // Logout function
   const handleLogout = () => {
     logOut()
-      .then(() => alert("➜] You are now logged out ⚠️"))
-      .catch((err) => {
-        console.log(err);
-      });
+      .then(() => alert("➜ You are now logged out ⚠️"))
+      .catch((err) => console.log(err));
   };
 
   const handleViewProfile = () => {
     navigate("/profile");
   };
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  // Mobile menu toggle
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
+  // Close avatar menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   // Dropdown animation
   const dropdownAnimation = useSpring({
-    opacity: menuOpen || hovering ? 1 : 0,
-    transform: menuOpen || hovering ? `translateY(0px)` : `translateY(-10px)`,
-    pointerEvents: menuOpen || hovering ? "auto" : "none",
+    opacity: menuOpen ? 1 : 0,
+    transform: menuOpen ? `translateY(0px)` : `translateY(-10px)`,
+    pointerEvents: menuOpen ? "auto" : "none",
     config: { tension: 250, friction: 20 },
   });
 
   return (
     <div className="nav bg-[#FFF8F1] border-b border-[#EAD9C9] shadow-sm sticky top-0 z-50">
-      <nav className=" max-w-7xl mx-auto   py-4 flex  ">
+      <nav className="max-w-7xl mx-auto py-4 flex">
         <div className="flex justify-between items-center w-11/12 mx-auto relative">
           {/* Logo */}
           <div className="flex items-center gap-2 text-2xl font-bold text-[#5B3A1A]">
@@ -48,7 +60,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className=" hidden md:flex gap-8 text-lg text-black">
+          <div className="hidden md:flex gap-8 text-lg text-black">
             <NavLink to="/" className="navList">
               Home
             </NavLink>
@@ -63,16 +75,12 @@ const Navbar = () => {
             </NavLink>
           </div>
 
-          {/* Right Side (Avatar + Buttons) */}
+          {/* Right Side */}
           <div className="flex items-center gap-3 relative">
-            {/* Avatar Dropdown */}
-            <div
-              className="relative hidden md:block"
-              onMouseEnter={() => setHovering(true)}
-              onMouseLeave={() => setHovering(false)}
-            >
+            {/* Avatar + Dropdown */}
+            <div ref={dropdownRef} className="relative hidden md:block">
               <img
-                onClick={toggleMenu}
+                onClick={() => setMenuOpen(!menuOpen)}
                 src={
                   user?.photoURL ||
                   "https://img.icons8.com/?size=100&id=0prbldgxVuTl&format=png&color=000000"
@@ -93,12 +101,8 @@ const Navbar = () => {
                     {user?.email || "user@gmail.com"}
                   </p>
                 </div>
-                <NavLink
-                  to="/profile"
-                  className="navList font-medium text-black"
-                >
-                  My Profile
-                </NavLink>
+
+
                 <button
                   onClick={handleViewProfile}
                   className="w-full cursor-pointer mt-4 bg-[#8B5E3B] hover:bg-[#6C4428] text-white py-2 rounded-lg transition text-sm"
@@ -108,7 +112,7 @@ const Navbar = () => {
               </animated.div>
             </div>
 
-            {/* logic Buttons */}
+            {/* Auth Buttons */}
             <div className="hidden md:block">
               {user ? (
                 <button
@@ -149,36 +153,35 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 onClick={toggleMobileMenu}
-                className="text-gray-700 hover:text-[#8B5E3B] transition font-medium"
+                className="font-medium"
               >
                 Home
               </NavLink>
               <NavLink
                 to="/services"
                 onClick={toggleMobileMenu}
-                className="text-gray-700 hover:text-[#8B5E3B] transition font-medium"
+                className="font-medium"
               >
                 Services
               </NavLink>
-
               <NavLink
                 to="/profile"
                 onClick={toggleMobileMenu}
-                className="text-gray-700 hover:text-[#8B5E3B] transition font-medium"
+                className="font-medium"
               >
                 My Profile
               </NavLink>
               <NavLink
                 to="/about"
-                   onClick={toggleMobileMenu}
-                className="navList hover:text-[#8B5E3B] transition font-medium"
+                onClick={toggleMobileMenu}
+                className="font-medium"
               >
                 About us
               </NavLink>
               <NavLink
                 to="/contact"
-                   onClick={toggleMobileMenu}
-                className="navList hover:text-[#8B5E3B] transition font-medium"
+                onClick={toggleMobileMenu}
+                className="font-medium"
               >
                 Contact
               </NavLink>
@@ -189,7 +192,7 @@ const Navbar = () => {
                     handleLogout();
                     toggleMobileMenu();
                   }}
-                  className="bg-[#8B5E3B]  hover:bg-[#6C4428] text-white px-6 py-2 rounded-lg transition"
+                  className="bg-[#8B5E3B] hover:bg-[#6C4428] text-white px-6 py-2 rounded-lg transition"
                 >
                   Logout
                 </button>
@@ -197,7 +200,7 @@ const Navbar = () => {
                 <Link to="/auth/login">
                   <button
                     onClick={toggleMobileMenu}
-                    className="bg-[#8B5E3B] hover:bg-[#6C4428]  text-white px-6 py-2 rounded-lg transition"
+                    className="bg-[#8B5E3B] hover:bg-[#6C4428] text-white px-6 py-2 rounded-lg transition"
                   >
                     Login
                   </button>
