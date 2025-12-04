@@ -170,12 +170,14 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/about"
+                   onClick={toggleMobileMenu}
                 className="navList hover:text-[#8B5E3B] transition font-medium"
               >
                 About us
               </NavLink>
               <NavLink
                 to="/contact"
+                   onClick={toggleMobileMenu}
                 className="navList hover:text-[#8B5E3B] transition font-medium"
               >
                 Contact
